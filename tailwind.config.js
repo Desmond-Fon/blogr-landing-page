@@ -11,7 +11,8 @@ module.exports = {
         'footerText': 'hsl(240, 2%, 79%)',
         'bodyCopy': ' hsl(207, 13%, 34%)',
         'footerBackground': 'hsl(240, 10%, 16%)',
-        'headings': 'hsl(208, 49%, 24%)'
+        'headings': 'hsl(208, 49%, 24%)',
+        'lightRed': 'hsl(353, 100%, 62%)'
       },
       fontFamily: {
         Overpass: [ 'Overpass', 'sans-serif'],
