@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="dist/output.css">
+  
+  <title>Frontend Mentor | [Blogr]</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="font-Overpass">
+
+<header class=" bg-[url('images/bg-pattern-intro-mobile.svg')] bg-header rounded-bl-mid p-8">
+  <!-- <img src="images/bg-pattern-intro-mobile.svg" alt=""> -->
+ <nav>
+  <div class="flex justify-between items-center"><img src="images/logo.svg" alt="" class="w-20">
+    <img src="images/icon-hamburger.svg" alt="" class="w-8"></div>
+  
+  <div class="hidden">
+    <select name="drop-down" id="">
+      <option value="overview">Product</option>
+      <option value="overview">Overview</option>
+      <option value="pricing">Pricing</option>
+      <option value="marketplace">Marketplace</option>
+      <option value="features">Features</option>
+      <option value="integration">Integrations</option>
+    </select>
+  
+    <select name="drop-down" id="">
+      <option value="company">Company</option>
+      <option value="about">About</option>
+      <option value="team">Team</option>
+      <option value="blog">Blog</option>
+      <option value="careers">Careers</option>
+    </select>
+    
+    <select name="drop-down" id="">
+      <option value="connect">Connect</option>
+      <option value="contact">Contact</option>
+      <option value="newsletter">Newsletter</option>
+      <option value="linkedIn">LinkedIn</option>
+    </select>
+  </div>
+  
+
+ <div class="hidden">
+  <button>Login</button>
+ <button> Sign Up</button>
+ </div>
+</nav>
+
+  
+  <h1 class="text-center text-white font-light text-4xl mt-24"> A modern publishing platform</h1>
+  <h6 class="text-center font-thin text-gray-100 tracking-wider mt-5">Grow your audience and build your online brand</h6>
+
+<div class="flex justify-center items-center mt-8 mb-20">
+  <button class="rounded-full bg-white py-2 px-4 font-bold text-header mr-2">Start for Free</button>
+  <button class="rounded-full border py-2 px-4 font-bold text-white ml-2">Learn More</button>
+</div>
+</header>
+
+  
+<main>
+  
+<div class="relative">
+  <section class="mb-72">
+    <h3 class="font-bold text-xl tracking-wide mt-20 text-center mb-6  font-Ubuntu text-headings">Designed for the future</h3>
+  
+  <div>
+  <div class="flex justify-center">
+    <img src="images/illustration-editor-mobile.svg" alt="">
+  </div>
+  
+    <div>
+      <div class="px-10">
+        <h4 class="font-bold text-xl tracking-wide mt-5 text-center mb-6  font-Ubuntu px-8 text-headings">  Introducing an extensible editor</h4>
+        <p class="text-center text-darkBlue">Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
+          The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
+          videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
+          change the looks of a blog.</p>
+      </div>
+      
+      <div class="px-10 pt-5">
+        <h4 class="font-bold text-xl tracking-wide mt-5 text-center mb-6  font-Ubuntu px-8 text-headings">  Robust content management</h4>
+      <p class="text-center text-darkBlue">  Flexible content management enables users to easily move through posts. Increase the usability of your blog 
+        by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.</p>
+      </div>
+    </div>
+  
+  <img src="images/illustration-editor-desktop.svg" alt="" class="hidden">
+  
+    
+  </div>
+  </section>
+  
+  <img src="images/illustration-phones.svg" alt="" class="absolute bottom-96 left-0 z-10">
+  
+  <aside class="bg-gradient-to-t from-darkBlue to-darkSaturatedBlue px-10 rounded-bl-mid rounded-tr-mid pt-52 overflow-hidden relative">
+    
+
+      <img src="images/bg-pattern-circles.svg" alt="" class="absolute left-0 -top-32 z-0">
+    
+    <div>
+      <h3 class="text-center text-4xl text-white pb-8 z-50" >  State of the Art Infrastructure</h3>
+      <p class="text-center text-gray-400 pb-32 z-10">With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
+        This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.</p>
+    </div>
+    </aside>
+  
+</div>
+
+
+<article>
+  <div class="flex justify-center">
+    <img src="images/illustration-laptop-desktop.svg" alt="" class="hidden">
+  <img src="images/illustration-laptop-mobile.svg" alt="">
+  </div>
+
+<div class="px-10">
+  <h3 class="font-bold text-xl tracking-wide mt-5 text-center mb-6  font-Ubuntu px-8 text-headings">  Free, open, simple</h3>
+ <p class="text-center text-darkBlue"> Blogr is a free and open source application backed by a large community of helpful developers. It supports 
+  features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
+  and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.</p>
+</div>
+
+<div class="px-10 pt-5">
+  <h3 class="font-bold text-xl tracking-wide mt-5 text-center mb-6  font-Ubuntu px-8 text-headings">Powerful tooling</h3>
+  <p class="text-center text-darkBlue"> Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
+   capable of producing even the most complicated sites.</p>
+</div>
+</article>
+</main>
+
+ <footer class="bg-footerBackground rounded-tr-mid mt-20">
+  <div class="flex justify-center items-center pt-20 pb-10">
+    <img src="images/logo.svg" alt="" >
+  </div>
+ <div class="text-center pb-5">
+  <h5 class="text-white  py-5 font-bold">Product</h5>
+
+  <p class="text-footerText p-1">Overview</p>
+  <p class="text-footerText p-1">Pricing</p>
+  <p class="text-footerText p-1">Marketplace</p>
+  <p class="text-footerText p-1">Features</p>
+  <p class="text-footerText p-1">Integrations</p>
+ </div>
+
+  <div class="text-center pb-5">
+    <h5 class="text-white  py-5 font-bold">Company</h5>
+
+  <p class="text-footerText p-1">About</p>
+  <p class="text-footerText p-1">Team</p>
+  <p class="text-footerText p-1">Blog</p>
+  <p class="text-footerText p-1">Careers</p>
+  </div>
+
+  <div class="text-center pb-5 font-bold">
+    <h5 class="text-white  py-5">Connect</h5>
+  
+  <p class="text-footerText p-1">Contact</p>
+  <p class="text-footerText p-1">Newsletter</p>
+  <p class="text-footerText p-1">LinkedIn</p>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Fon Desmond</a>.
+  </div>
+</footer>
+</body>
+</html>
