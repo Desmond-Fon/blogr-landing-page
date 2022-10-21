@@ -17,14 +17,15 @@
 </head>
 <body class="font-Overpass">
 
-<header class=" bg-[url('images/bg-pattern-intro-mobile.svg')] bg-gradient-to-b from-headerText to-lightRed rounded-bl-mid p-8">
-  <!-- <img src="images/bg-pattern-intro-mobile.svg" alt=""> -->
- <nav>
+<header class=" bg-gradient-to-b from-headerText to-lightRed rounded-bl-mid p-8 lg:pt-12 lg:px-28">
+  <!-- <img src="images/bg-pattern-intro-mobile.svg  bg-[url('images/bg-pattern-intro-mobile.svg')]" alt=""> -->
+ <nav class="lg:flex lg:justify-between lg:items-center">
   <div class="flex justify-between items-center"><img src="images/logo.svg" alt="" class="w-20">
-    <img src="images/icon-hamburger.svg" alt="" class="w-8" id="hamburg"></div>
+    <img src="images/icon-hamburger.svg" alt="" class="w-8 lg:hidden" id="hamburg">
+  </div>
   
-  <div class="hidden bg-white p-7 rounded-md shadow-lg" id="menu">
-   <div class="">
+  <div class="hidden bg-white p-7 rounded-md shadow-lg lg:flex lg:bg-transparent lg:rounded-none lg:shadow-none" id="menu">
+   <div class="lg:flex lg:between items-center">
     <div class="flex justify-center items-center pb-3">
       <select name="drop-down" id="" class="font-bold">
         <option value="product">Product</option>
@@ -56,7 +57,7 @@
       </select>
     </div>
 <hr class="text-gray-600">
-    <div class="items-center pt-6 pb-3">
+    <div class="items-center pt-6 pb-3 lg:flex lg:justify-center lg:items-center">
       <div class="flex justify-center items-center pb-3"><button class="bg-white py-2 px-6 font-bold text-black">Login</button> </div>
      <div class="flex justify-center items-center"><button class="rounded-full bg-gradient-to-r from-headerText to-lightRed py-2 px-6 font-light text-white"> Sign Up</button></div>
      </div>
@@ -116,7 +117,7 @@
   <aside class="bg-gradient-to-t from-darkBlue to-darkSaturatedBlue px-10 rounded-bl-mid rounded-tr-mid pt-52 overflow-hidden relative">
     
 
-      <img src="images/bg-pattern-circles.svg" alt="" class="absolute left-0 -top-32 z-0">
+      <img src="images/bg-pattern-circles.svg" alt="" class="absolute left-0 -top-32 z-0 md:hidden">
     
     <div>
       <h3 class="text-center text-4xl text-white pb-8 z-50" >  State of the Art Infrastructure</h3>
