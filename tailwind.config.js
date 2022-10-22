@@ -18,6 +18,9 @@ module.exports = {
         Overpass: [ 'Overpass', 'sans-serif'],
         Ubuntu: ['Ubuntu', 'sans-serif']
      },
+     screens: {
+        'little': '435px'
+     },
      borderRadius: {
       'mid': '90px'
      },

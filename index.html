@@ -17,16 +17,52 @@
 </head>
 <body class="font-Overpass">
 
-<header class=" bg-gradient-to-b from-headerText to-lightRed rounded-bl-mid p-8 lg:pt-12 lg:px-28">
+<header class=" bg-gradient-to-b from-headerText to-lightRed rounded-bl-mid p-8 lg:pt-6 lg:px-28">
   <!-- <img src="images/bg-pattern-intro-mobile.svg  bg-[url('images/bg-pattern-intro-mobile.svg')]" alt=""> -->
  <nav class="lg:flex lg:justify-between lg:items-center">
-  <div class="flex justify-between items-center"><img src="images/logo.svg" alt="" class="w-20">
-    <img src="images/icon-hamburger.svg" alt="" class="w-8 lg:hidden" id="hamburg">
+  <div class="lg:flex lg:justify-between lg:items-center">
+    <div class="flex justify-between items-center "><img src="images/logo.svg" alt="" class="w-20">
+      <img src="images/icon-hamburger.svg" alt="" class="w-8 lg:hidden" id="hamburg">
+    </div>
+  
+  
+      <div class="lg:flex hidden lg:justify-between lg:pl-16">
+        <div class="flex justify-center items-center lg:bg-transparent lg:p-8">
+          <select name="drop-down" id="" class="font-light lg:bg-transparent lg:text-white">
+            <option value="product">Product</option>
+            <option value="overview">Overv</option>
+            <option value="pricing">Pricing</option>
+            <option value="marketplace">Market</option>
+            <option value="features">Feature</option>
+            <option value="integration">Integra</option>
+          </select>
+        </div>
+      
+        <div class="lg:flex justify-center items-center lg:p-8">
+          <select name="drop-down" id="" class="font-light lg:bg-transparent lg:text-white">
+          <option value="company">Company</option>
+          <option value="about">About</option>
+          <option value="team">Team</option>
+          <option value="blog">Blog</option>
+          <option value="careers">Careers</option>
+        </select>
+        </div>
+        
+        
+        <div class="lg:flex justify-center items-center lg:p-8">
+          <select name="drop-down" id="" class="font-light lg:bg-transparent lg:text-white">
+            <option value="connect" >Connect</option>
+            <option value="contact" >Contact</option>
+            <option value="newsletter"  >Newsle</option>
+            <option value="linkedIn">Linked</option>
+          </select>
+        </div>
+    </div>
   </div>
   
   <div class="hidden bg-white p-7 rounded-md shadow-lg lg:flex lg:bg-transparent lg:rounded-none lg:shadow-none" id="menu">
    <div class="lg:flex lg:between items-center">
-    <div class="flex justify-center items-center pb-3">
+    <div class="flex justify-center items-center pb-3 lg:hidden">
       <select name="drop-down" id="" class="font-bold">
         <option value="product">Product</option>
         <option value="overview">Overv</option>
@@ -37,7 +73,7 @@
       </select>
     </div><br>
   
-    <div class="flex justify-center items-center pb-3">
+    <div class="flex justify-center items-center pb-3 lg:hidden">
       <select name="drop-down" id="" class="font-bold">
       <option value="company">Company</option>
       <option value="about">About</option>
@@ -48,7 +84,7 @@
     </div>
     <br>
     
-    <div class="flex justify-center items-center pb-5">
+    <div class="flex justify-center items-center pb-5 lg:hidden">
       <select name="drop-down" id="" class="font-bold">
         <option value="connect" >Connect</option>
         <option value="contact" >Contact</option>
@@ -58,8 +94,9 @@
     </div>
 <hr class="text-gray-600">
     <div class="items-center pt-6 pb-3 lg:flex lg:justify-center lg:items-center">
-      <div class="flex justify-center items-center pb-3"><button class="bg-white py-2 px-6 font-bold text-black">Login</button> </div>
-     <div class="flex justify-center items-center"><button class="rounded-full bg-gradient-to-r from-headerText to-lightRed py-2 px-6 font-light text-white"> Sign Up</button></div>
+      <div class="flex justify-center items-center pb-3"><button class="bg-white py-2 px-6 font-bold text-black lg:text-white lg:bg-transparent">Login</button> </div>
+     <div class="flex justify-center items-center pb-3"><button class="rounded-full bg-gradient-to-r from-headerText to-lightRed py-2 px-6 font-light text-white lg:hidden"> Sign Up</button>
+      <button class="hidden lg:flex rounded-full bg-white py-2 px-6 font-bold text-header"> Sign Up</button></div>
      </div>
    </div>
   </div>
@@ -79,49 +116,52 @@
 </header>
 
   
-<main>
+<main">
   
 <div class="relative">
-  <section class="mb-72">
-    <h3 class="font-bold text-xl tracking-wide mt-20 text-center mb-6  font-Ubuntu text-headings">Designed for the future</h3>
+  <section class="mb-72 lg:mb-10">
+    <h3 class="font-bold text-xl tracking-wide mt-20 text-center mb-6  font-Ubuntu text-headings lg:text-2xl">Designed for the future</h3>
   
-  <div>
+  <div class="lg:flex lg:items-center">
   <div class="flex justify-center">
-    <img src="images/illustration-editor-mobile.svg" alt="">
+    <img src="images/illustration-editor-mobile.svg" alt="" class="lg:hidden">
   </div>
   
-    <div>
-      <div class="px-10">
-        <h4 class="font-bold text-xl tracking-wide mt-5 text-center mb-6  font-Ubuntu px-8 text-headings">  Introducing an extensible editor</h4>
-        <p class="text-center text-darkBlue">Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
+    <div class="lg:w-1/2">
+      <div class="px-10 lg:px-28">
+        <h4 class="font-bold text-xl tracking-wide mt-5 text-center mb-6 font-Ubuntu px-8 lg:px-0 text-headings lg:text-left">  Introducing an extensible editor</h4>
+        <p class="text-center lg:text-left text-darkBlue">Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
           The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
           videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
           change the looks of a blog.</p>
       </div>
       
-      <div class="px-10 pt-5">
-        <h4 class="font-bold text-xl tracking-wide mt-5 text-center mb-6  font-Ubuntu px-8 text-headings">  Robust content management</h4>
-      <p class="text-center text-darkBlue">  Flexible content management enables users to easily move through posts. Increase the usability of your blog 
+      <div class="px-10 pt-5 lg:px-28">
+        <h4 class="font-bold text-xl tracking-wide mt-5 text-center mb-6  font-Ubuntu px-8 text-headings lg:p-0 lg:text-left">  Robust content management</h4>
+      <p class="text-center text-darkBlue lg:text-left">  Flexible content management enables users to easily move through posts. Increase the usability of your blog 
         by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.</p>
       </div>
     </div>
   
-  <img src="images/illustration-editor-desktop.svg" alt="" class="hidden">
+  
+  <img src="images/illustration-editor-desktop.svg" alt="" class="hidden lg:flex lg:w-1/2">
   
     
   </div>
   </section>
   
-  <img src="images/illustration-phones.svg" alt="" class="absolute bottom-96 left-0 z-10">
+  <img src="images/illustration-phones.svg" alt="" class="flex justify-center absolute bottom-96 left-0 z-10 md:bottom-72 md:h-96 md:left-56 little:bottom-72 little: little:h-96 lg:hidden">
   
-  <aside class="bg-gradient-to-t from-darkBlue to-darkSaturatedBlue px-10 rounded-bl-mid rounded-tr-mid pt-52 overflow-hidden relative">
+  <aside class="bg-gradient-to-t from-darkBlue to-darkSaturatedBlue px-10 rounded-bl-mid rounded-tr-mid pt-52 overflow-hidden relative lg:flex lg:justify-between lg:items-center lg:pt-0 lg:px-0">
     
-
-      <img src="images/bg-pattern-circles.svg" alt="" class="absolute left-0 -top-32 z-0 md:hidden">
+   <div class="lg:w-1/2">
+    <img src="images/illustration-phones.svg" alt="" class="lg:flex justify-center hidden lg:-mx-2">
+    <img src="images/bg-pattern-circles.svg" alt="" class="absolute left-0 -top-32 z-0 md:hidden little:hidden lg:flex">
+   </div>
     
-    <div>
-      <h3 class="text-center text-4xl text-white pb-8 z-50" >  State of the Art Infrastructure</h3>
-      <p class="text-center text-gray-400 pb-32 z-10">With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
+    <div class="lg:w-1/2  lg:pr-28">
+      <h3 class="text-center text-4xl text-white pb-8 z-50 lg:text-left" >  State of the Art Infrastructure</h3>
+      <p class="text-center text-gray-400 pb-32 z-10 lg:text-left lg:pb-0">With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
         This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.</p>
     </div>
     </aside>
@@ -129,62 +169,68 @@
 </div>
 
 
-<article>
-  <div class="flex justify-center">
-    <img src="images/illustration-laptop-desktop.svg" alt="" class="hidden">
-  <img src="images/illustration-laptop-mobile.svg" alt="">
+<article class="lg:flex lg:justify-between items-center">
+  <div class="flex justify-center lg:w-1/2">
+    <img src="images/illustration-laptop-desktop.svg" alt="" class="hidden lg:flex">
+  <img src="images/illustration-laptop-mobile.svg" alt="" class="lg:hidden">
   </div>
 
-<div class="px-10">
-  <h3 class="font-bold text-xl tracking-wide mt-5 text-center mb-6  font-Ubuntu px-8 text-headings">  Free, open, simple</h3>
- <p class="text-center text-darkBlue"> Blogr is a free and open source application backed by a large community of helpful developers. It supports 
-  features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
-  and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.</p>
-</div>
-
-<div class="px-10 pt-5">
-  <h3 class="font-bold text-xl tracking-wide mt-5 text-center mb-6  font-Ubuntu px-8 text-headings">Powerful tooling</h3>
-  <p class="text-center text-darkBlue"> Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
-   capable of producing even the most complicated sites.</p>
+<div class="lg:w-1/2  lg:pr-28">
+  <div class="px-10">
+    <h3 class="font-bold text-xl tracking-wide mt-5 text-center mb-6  font-Ubuntu px-8 text-headings lg:px-0 lg:text-left">  Free, open, simple</h3>
+   <p class="text-center text-darkBlue lg:text-left"> Blogr is a free and open source application backed by a large community of helpful developers. It supports 
+    features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
+    and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.</p>
+  </div>
+  
+  <div class="px-10 pt-5">
+    <h3 class="font-bold text-xl tracking-wide mt-5 text-center mb-6  font-Ubuntu px-8 text-headings lg:px-0 lg:text-left">Powerful tooling</h3>
+    <p class="text-center text-darkBlue lg:text-left"> Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
+     capable of producing even the most complicated sites.</p>
+  </div>
 </div>
 </article>
 </main>
 
- <footer class="bg-footerBackground rounded-tr-mid mt-20">
-  <div class="flex justify-center items-center pt-20 pb-10">
-    <img src="images/logo.svg" alt="" >
-  </div>
- <div class="text-center pb-5">
-  <h5 class="text-white  py-5 font-bold">Product</h5>
-
-  <p class="text-footerText p-1">Overview</p>
-  <p class="text-footerText p-1">Pricing</p>
-  <p class="text-footerText p-1">Marketplace</p>
-  <p class="text-footerText p-1">Features</p>
-  <p class="text-footerText p-1">Integrations</p>
- </div>
-
-  <div class="text-center pb-5">
-    <h5 class="text-white  py-5 font-bold">Company</h5>
-
-  <p class="text-footerText p-1">About</p>
-  <p class="text-footerText p-1">Team</p>
-  <p class="text-footerText p-1">Blog</p>
-  <p class="text-footerText p-1">Careers</p>
-  </div>
-
-  <div class="text-center pb-5 font-bold">
-    <h5 class="text-white  py-5">Connect</h5>
+ <footer class="bg-footerBackground rounded-tr-mid mt-20 ">
+  <div class="lg:flex lg:justify-evenly lg:py-20">
+    <div class="flex justify-center items-center lg:items-start lg:pt-0 pt-20 pb-10 lg:justify-start">
+      <img src="images/logo.svg" alt="" >
+    </div>
+   <div class="text-center pb-5 lg:text-left">
+    <h5 class="text-white  py-5 lg:py-0 lg:pb-5 font-bold">Product</h5>
   
-  <p class="text-footerText p-1">Contact</p>
-  <p class="text-footerText p-1">Newsletter</p>
-  <p class="text-footerText p-1">LinkedIn</p>
+    <p class="text-footerText p-1">Overview</p>
+    <p class="text-footerText p-1">Pricing</p>
+    <p class="text-footerText p-1">Marketplace</p>
+    <p class="text-footerText p-1">Features</p>
+    <p class="text-footerText p-1">Integrations</p>
+   </div>
+  
+    <div class="text-center pb-5 lg:text-left">
+      <h5 class="text-white  py-5 lg:py-0 lg:pb-5 font-bold">Company</h5>
+  
+    <p class="text-footerText p-1">About</p>
+    <p class="text-footerText p-1">Team</p>
+    <p class="text-footerText p-1">Blog</p>
+    <p class="text-footerText p-1">Careers</p>
+    </div>
+  
+    <div class="text-center pb-5 lg:text-left">
+      <h5 class="text-white  py-5 lg:py-0 lg:pb-5 font-bold">Connect</h5>
+    
+    <p class="text-footerText p-1">Contact</p>
+    <p class="text-footerText p-1">Newsletter</p>
+    <p class="text-footerText p-1">LinkedIn</p>
+    </div>
   </div>
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Fon Desmond</a>.
   </div>
+
+  
 </footer>
 <script src="script.js"></script>
 </body>
